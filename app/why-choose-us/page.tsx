@@ -3,6 +3,15 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Why Choose Us - SoftLogix',
   description: 'Discover why businesses choose SoftLogix for technical expertise, industry knowledge, end-to-end solutions, and reliable support.',
+  openGraph: {
+    title: 'Why Choose Us - SoftLogix',
+    description: 'Discover why businesses choose SoftLogix for technical expertise, industry knowledge, end-to-end solutions, and reliable support.',
+    images: ['/images/logo.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/logo.png'],
+  },
 };
 
 export default function WhyChooseUs() {

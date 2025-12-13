@@ -4,6 +4,15 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Industries We Serve - SoftLogix',
   description: 'SoftLogix serves diverse industries including manufacturing, FMCG, pharmaceuticals, food & beverage, and retail distribution with tax consultancy, trading, and packaging solutions.',
+  openGraph: {
+    title: 'Industries We Serve - SoftLogix',
+    description: 'SoftLogix serves diverse industries including manufacturing, FMCG, pharmaceuticals, food & beverage, and retail distribution with tax consultancy, trading, and packaging solutions.',
+    images: ['/images/manufacturer.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/manufacturer.png'],
+  },
 };
 
 export default function Industries() {

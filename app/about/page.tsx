@@ -1,6 +1,15 @@
 export const metadata = {
   title: 'About Us - SoftLogix',
   description: 'Learn about SoftLogix, our mission, vision, and commitment to delivering excellence in tax consultancy, general trading, and packaging solutions in Dubai, UAE.',
+  openGraph: {
+    title: 'About Us - SoftLogix',
+    description: 'Learn about SoftLogix, our mission, vision, and commitment to delivering excellence in tax consultancy, general trading, and packaging solutions in Dubai, UAE.',
+    images: ['/images/logo.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/logo.png'],
+  },
 };
 
 export default function About() {

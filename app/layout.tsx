@@ -17,9 +17,32 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://softlogix.com'),
   title: "SoftLogix - Tax Consultancy, General Trading & Packaging Solutions",
   description: "Professional tax consultancy, general trading, and marketing management services. Specializing in packaging materials, aseptic packaging paper, and juices in PET bottles. Located in Dubai, UAE.",
   keywords: "tax consultancy, general trading, marketing management, packaging materials, aseptic packaging paper, PET bottles, juices, Dubai, UAE, DSO-IFZA",
+  openGraph: {
+    title: "SoftLogix - Tax Consultancy, General Trading & Packaging Solutions",
+    description: "Professional tax consultancy, general trading, and marketing management services. Specializing in packaging materials, aseptic packaging paper, and juices in PET bottles.",
+    url: "https://softlogix.com",
+    siteName: "SoftLogix",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "SoftLogix - Tax Consultancy, General Trading & Packaging Solutions",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SoftLogix - Tax Consultancy, General Trading & Packaging Solutions",
+    description: "Professional tax consultancy, general trading, and marketing management services. Specializing in packaging materials, aseptic packaging paper, and juices in PET bottles.",
+    images: ["/images/logo.png"],
+  },
 };
 
 export default function RootLayout({

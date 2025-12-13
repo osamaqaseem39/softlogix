@@ -4,6 +4,15 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Contact Us - SoftLogix',
   description: 'Get in touch with SoftLogix for tax consultancy, general trading, and packaging solutions. Located in DSO-IFZA, Dubai Silicon Oasis, Dubai, UAE. Call +971 50 763 9211.',
+  openGraph: {
+    title: 'Contact Us - SoftLogix',
+    description: 'Get in touch with SoftLogix for tax consultancy, general trading, and packaging solutions. Located in DSO-IFZA, Dubai Silicon Oasis, Dubai, UAE.',
+    images: ['/images/logo.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/logo.png'],
+  },
 };
 
 export default function Contact() {

@@ -4,6 +4,15 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Products - Packaging Materials & Beverages | SoftLogix',
   description: 'High-quality packaging materials, aseptic packaging paper, and premium juices in PET bottles. Reliable packaging solutions for various industries in Dubai, UAE.',
+  openGraph: {
+    title: 'Products - Packaging Materials & Beverages | SoftLogix',
+    description: 'High-quality packaging materials, aseptic packaging paper, and premium juices in PET bottles. Reliable packaging solutions for various industries in Dubai, UAE.',
+    images: ['/images/packaginghomepage.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/packaginghomepage.png'],
+  },
 };
 
 export default function Products() {

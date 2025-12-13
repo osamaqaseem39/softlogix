@@ -4,6 +4,15 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Services - Tax Consultancy & General Trading | SoftLogix',
   description: 'Expert tax consultancy services and comprehensive general trading solutions. Professional guidance for tax compliance, financial management, and business expansion in Dubai, UAE.',
+  openGraph: {
+    title: 'Services - Tax Consultancy & General Trading | SoftLogix',
+    description: 'Expert tax consultancy services and comprehensive general trading solutions. Professional guidance for tax compliance, financial management, and business expansion in Dubai, UAE.',
+    images: ['/images/tax.jpg'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/images/tax.jpg'],
+  },
 };
 
 export default function Services() {
