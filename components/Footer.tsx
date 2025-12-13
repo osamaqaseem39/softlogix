@@ -32,6 +32,9 @@ export default function Footer() {
             <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
+                <Link href="/" className="hover:text-white transition-colors">Home</Link>
+              </li>
+              <li>
                 <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
               </li>
               <li>
@@ -44,12 +47,15 @@ export default function Footer() {
                 <Link href="/industries" className="hover:text-white transition-colors">Industries</Link>
               </li>
               <li>
+                <Link href="/why-choose-us" className="hover:text-white transition-colors">Why Choose Us</Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
               </li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Our Activities */}
           <div>
             <h4 className="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Our Activities</h4>
             <ul className="space-y-2">
@@ -57,13 +63,19 @@ export default function Footer() {
                 <Link href="/services" className="hover:text-white transition-colors">Tax Consultancy</Link>
               </li>
               <li>
-                <Link href="/products" className="hover:text-white transition-colors">General Trading</Link>
+                <Link href="/services" className="hover:text-white transition-colors">General Trading</Link>
               </li>
               <li>
-                <Link href="/products" className="hover:text-white transition-colors">Marketing Management</Link>
+                <Link href="/services" className="hover:text-white transition-colors">Marketing Management</Link>
               </li>
               <li>
                 <Link href="/products" className="hover:text-white transition-colors">Packaging Materials</Link>
+              </li>
+              <li>
+                <Link href="/products" className="hover:text-white transition-colors">Aseptic Packaging Paper</Link>
+              </li>
+              <li>
+                <Link href="/products" className="hover:text-white transition-colors">Juices in PET Bottles</Link>
               </li>
             </ul>
           </div>
