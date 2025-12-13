@@ -36,6 +36,9 @@ export default function Header() {
             <Link href="/products" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">
               Products
             </Link>
+            <Link href="/catalogue" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">
+              Catalogue
+            </Link>
             <Link href="/industries" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">
               Industries
             </Link>
@@ -73,6 +76,7 @@ export default function Header() {
             <Link href="/about" className="block text-gray-700 hover:text-blue-900 font-medium">About Us</Link>
             <Link href="/services" className="block text-gray-700 hover:text-blue-900 font-medium">Services</Link>
             <Link href="/products" className="block text-gray-700 hover:text-blue-900 font-medium">Products</Link>
+            <Link href="/catalogue" className="block text-gray-700 hover:text-blue-900 font-medium">Catalogue</Link>
             <Link href="/industries" className="block text-gray-700 hover:text-blue-900 font-medium">Industries</Link>
             <Link href="/why-choose-us" className="block text-gray-700 hover:text-blue-900 font-medium">Why Choose Us</Link>
             <Link href="/contact" className="block bg-blue-900 text-white px-4 py-2 rounded-md text-center font-medium">

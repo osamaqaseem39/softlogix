@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const metadata = {
   title: 'About Us - SoftLogix',
   description: 'Learn about SoftLogix, our mission, vision, and commitment to delivering excellence in tax consultancy, general trading, and packaging solutions in Dubai, UAE.',
@@ -129,6 +131,25 @@ export default function About() {
               vendors—we're partners in your success.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Catalogue CTA Section */}
+      <section className="py-16 lg:py-24 bg-blue-900 text-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            Explore Our Product Catalogue
+          </h2>
+          <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Discover our comprehensive range of PET juices, packaging products, and machinery solutions. 
+            View our digital catalogue to see all available products and services.
+          </p>
+          <Link
+            href="/catalogue"
+            className="inline-block bg-white text-blue-900 px-8 py-3 rounded-md font-semibold hover:bg-blue-50 transition-colors text-lg shadow-lg hover:shadow-xl"
+          >
+            View Catalogue
+          </Link>
         </div>
       </section>
     </div>
