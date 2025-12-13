@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Services - Accounting Software Consultancy | SoftLogix',
@@ -118,10 +119,16 @@ export default function Services() {
                     ))}
                   </ul>
                 </div>
-                <div className="flex-1 bg-gray-50 rounded-lg p-8 h-full">
-                  {/* Placeholder for service illustration or image */}
-                  <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <p className="text-gray-400">Service Image</p>
+                <div className="flex-1 group">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <Image
+                      src={index === 0 ? "/images/tax.jpg" : index === 1 ? "/images/consultation.jpg" : "/images/consulation.jpg"}
+                      alt={service.title}
+                      width={600}
+                      height={400}
+                      className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
               </div>
@@ -143,8 +150,8 @@ export default function Services() {
               { title: 'End-to-End Support', desc: 'From planning to post-implementation assistance' },
               { title: 'Industry Knowledge', desc: 'Deep understanding of your business sector and challenges' }
             ].map((benefit, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{benefit.title}</h3>
+              <div key={idx} className="group bg-white p-6 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-900 transition-colors">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.desc}</p>
               </div>
             ))}

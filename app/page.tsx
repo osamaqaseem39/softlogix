@@ -1,11 +1,23 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-12 sm:py-16 md:py-20 lg:py-32">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-12 sm:py-16 md:py-20 lg:py-32 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/herobg.jpg"
+            alt="Background"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/80 to-blue-900/80"></div>
+        </div>
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 sm:mb-6">
               Professional Tax Consultancy & General Trading Solutions
@@ -37,14 +49,18 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2">
             {/* Tax Consultancy & General Trading */}
-            <div className="rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-4">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-900 rounded-lg">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
+            <div className="group rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="mb-6 overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/tax.jpg"
+                    alt="Tax Consultancy"
+                    width={600}
+                    height={400}
+                    className="w-full h-48 object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
-              </div>
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
                 Tax Consultancy & General Trading
               </h2>
@@ -73,20 +89,25 @@ export default function Home() {
                   Marketing Management
                 </li>
               </ul>
-              <Link href="/services" className="text-blue-900 font-semibold hover:text-blue-700">
+              <Link href="/services" className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-700 group-hover:translate-x-2 transition-transform duration-300">
                 Learn More →
               </Link>
+              </div>
             </div>
 
             {/* Packaging & Products */}
-            <div className="rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-4">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-900 rounded-lg">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                  </svg>
+            <div className="group rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10">
+                <div className="mb-6 overflow-hidden rounded-lg">
+                  <Image
+                    src="/images/packaging.png"
+                    alt="Packaging Materials"
+                    width={600}
+                    height={400}
+                    className="w-full h-48 object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
-              </div>
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
                 Packaging Materials & Products
               </h2>
@@ -115,9 +136,10 @@ export default function Home() {
                   Juices in PET Bottles
                 </li>
               </ul>
-              <Link href="/products" className="text-blue-900 font-semibold hover:text-blue-700">
+              <Link href="/products" className="inline-flex items-center text-blue-900 font-semibold hover:text-blue-700 group-hover:translate-x-2 transition-transform duration-300">
                 Learn More →
               </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -133,9 +155,16 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
-            {['Manufacturing', 'FMCG', 'Pharmaceuticals', 'Food & Beverage', 'Retail & Distribution'].map((industry) => (
-              <div key={industry} className="bg-white p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-                <h3 className="text-sm sm:text-base font-semibold text-gray-900">{industry}</h3>
+            {['Manufacturing', 'FMCG', 'Pharmaceuticals', 'Food & Beverage', 'Retail & Distribution'].map((industry, idx) => (
+              <div key={industry} className="group bg-white p-4 sm:p-6 rounded-lg shadow-sm text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer">
+                <div className="mb-3 opacity-70 group-hover:opacity-100 transition-opacity">
+                  <div className="w-12 h-12 mx-auto bg-blue-100 rounded-full flex items-center justify-center group-hover:bg-blue-900 group-hover:scale-110 transition-all duration-300">
+                    <svg className="w-6 h-6 text-blue-900 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 className="text-sm sm:text-base font-semibold text-gray-900 group-hover:text-blue-900 transition-colors">{industry}</h3>
               </div>
             ))}
           </div>

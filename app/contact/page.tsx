@@ -1,4 +1,5 @@
 import ContactForm from '@/components/ContactForm';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Contact Us - SoftLogix',
@@ -104,8 +105,20 @@ export default function Contact() {
       {/* Map Section */}
       <section className="bg-white py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-            <p className="text-gray-400">Interactive Map - Business Location</p>
+          <div className="relative rounded-lg overflow-hidden shadow-lg h-96">
+            <Image
+              src="/images/herobg.jpg"
+              alt="Business Location - Dubai Silicon Oasis"
+              fill
+              className="object-cover opacity-70"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-blue-800/80 flex items-center justify-center">
+              <div className="text-center text-white p-6">
+                <h3 className="text-2xl font-bold mb-2">Visit Our Office</h3>
+                <p className="text-lg mb-4">DSO-IFZA, Dubai Silicon Oasis</p>
+                <p className="text-blue-100">Dubai, United Arab Emirates</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

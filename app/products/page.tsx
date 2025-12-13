@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Products - Industrial Machinery Solutions | SoftLogix',
@@ -10,6 +11,7 @@ export default function Products() {
     {
       title: 'Liquid Filling Machines',
       description: 'Precision liquid filling equipment designed for accuracy, speed, and reliability. Available in various configurations to meet your specific production requirements.',
+      image: '/images/petfilling.png',
       features: [
         'Automated liquid filling with precise volume control',
         'Multiple filling heads for high-speed production',
@@ -25,14 +27,15 @@ export default function Products() {
       )
     },
     {
-      title: 'Packaging and Automation Equipment',
-      description: 'Complete packaging solutions including capping, labeling, and sealing systems integrated with your production line for seamless automation.',
+      title: 'Packaging Materials & Aseptic Paper',
+      description: 'High-quality packaging materials and aseptic packaging paper for various industries. Complete packaging solutions including straps, wraps, and specialized packaging papers.',
+      image: '/images/Aseptic-Packaging-Paper.jpg',
       features: [
-        'Integrated packaging line solutions',
-        'Automatic capping and sealing systems',
-        'Labeling and date coding equipment',
-        'Cartoning and case packing automation',
-        'Quality control and inspection systems'
+        'Aseptic packaging paper for food and pharmaceutical industries',
+        'Industrial packaging straps and wraps',
+        'Premium packaging materials',
+        'Custom packaging solutions',
+        'Quality-certified products'
       ],
       applications: ['FMCG', 'Pharmaceuticals', 'Food & Beverage', 'Retail Products'],
       icon: (
@@ -42,16 +45,17 @@ export default function Products() {
       )
     },
     {
-      title: 'Custom Industrial Solutions',
-      description: 'Tailored machinery and automation systems designed to meet your unique production requirements and operational challenges.',
+      title: 'Juices in PET Bottles',
+      description: 'Premium quality juices in PET bottles. Our filling solutions support various bottle sizes and juice types with precision and hygiene.',
+      image: '/images/waterfilling.png',
       features: [
-        'Custom design and engineering',
-        'Integration with existing production lines',
-        'Scalable solutions for future growth',
-        'Specialized equipment for unique applications',
-        'Complete project management and support'
+        'PET bottle filling for juices and beverages',
+        'Various bottle sizes supported',
+        'Hygienic and sterile filling process',
+        'High-speed production capabilities',
+        'Quality assurance and control'
       ],
-      applications: ['Specialized Manufacturing', 'Unique Product Lines', 'High-Volume Production'],
+      applications: ['Juice Production', 'Beverage Industry', 'Food & Beverage', 'Bottling'],
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -145,9 +149,16 @@ export default function Products() {
                     </div>
                   </div>
                 </div>
-                <div className="flex-1 bg-gray-50 rounded-lg p-8 h-full">
-                  <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <p className="text-gray-400">Product Image</p>
+                <div className="flex-1 group">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    <Image
+                      src={product.image}
+                      alt={product.title}
+                      width={600}
+                      height={400}
+                      className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 </div>
               </div>
@@ -167,8 +178,8 @@ export default function Products() {
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {benefits.map((benefit, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{benefit.title}</h3>
+              <div key={idx} className="group bg-white p-6 rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-900 transition-colors">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
               </div>
             ))}
