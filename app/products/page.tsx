@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Products - Industrial Machinery Solutions | SoftLogix',
-  description: 'High-quality liquid filling machines, packaging equipment, and custom industrial automation solutions for manufacturing companies.',
+  title: 'Products - Packaging Materials & Beverages | SoftLogix',
+  description: 'High-quality packaging materials, aseptic packaging paper, and premium juices in PET bottles. Reliable packaging solutions for various industries in Dubai, UAE.',
 };
 
 export default function Products() {
@@ -150,12 +150,13 @@ export default function Products() {
                   </div>
                 </div>
                 <div className="flex-1 group">
-                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white p-4">
-                    <div className="relative w-full aspect-square">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white p-2 sm:p-4">
+                    <div className="relative w-full aspect-square min-h-[250px] sm:min-h-[300px] lg:min-h-[350px]">
                       <Image
                         src={product.image}
                         alt={product.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                         className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>

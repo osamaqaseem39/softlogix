@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'Contact Us - SoftLogix',
-  description: 'Get in touch with SoftLogix for accounting software consultancy and industrial machinery solutions. Request a consultation or get a quote.',
+  description: 'Get in touch with SoftLogix for tax consultancy, general trading, and packaging solutions. Located in DSO-IFZA, Dubai Silicon Oasis, Dubai, UAE. Call +971 50 763 9211.',
 };
 
 export default function Contact() {

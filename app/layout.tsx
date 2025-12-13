@@ -17,9 +17,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "SoftLogix - Accounting Software Consultancy & Industrial Machinery Solutions",
-  description: "Professional accounting software consultancy and industrial machinery solutions including liquid filling machines and automation equipment. Trusted by manufacturing companies, FMCG, pharmaceuticals, and more.",
-  keywords: "accounting software, ERP, liquid filling machines, industrial machinery, automation equipment, manufacturing solutions",
+  title: "SoftLogix - Tax Consultancy, General Trading & Packaging Solutions",
+  description: "Professional tax consultancy, general trading, and marketing management services. Specializing in packaging materials, aseptic packaging paper, and juices in PET bottles. Located in Dubai, UAE.",
+  keywords: "tax consultancy, general trading, marketing management, packaging materials, aseptic packaging paper, PET bottles, juices, Dubai, UAE, DSO-IFZA",
 };
 
 export default function RootLayout({

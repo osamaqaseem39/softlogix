@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'Services - Accounting Software Consultancy | SoftLogix',
-  description: 'Expert accounting software consultancy services including implementation, ERP integration, customization, training, and ongoing support for your business.',
+  title: 'Services - Tax Consultancy & General Trading | SoftLogix',
+  description: 'Expert tax consultancy services and comprehensive general trading solutions. Professional guidance for tax compliance, financial management, and business expansion in Dubai, UAE.',
 };
 
 export default function Services() {
@@ -120,12 +120,13 @@ export default function Services() {
                   </ul>
                 </div>
                 <div className="flex-1 group">
-                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-4">
-                    <div className="relative w-full aspect-square">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-2 sm:p-4">
+                    <div className="relative w-full aspect-square min-h-[250px] sm:min-h-[300px] lg:min-h-[350px]">
                       <Image
                         src={index === 0 ? "/images/tax.jpg" : index === 1 ? "/images/consultation.jpg" : "/images/consulation.jpg"}
                         alt={service.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                         className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const metadata = {
   title: 'Industries We Serve - SoftLogix',
-  description: 'SoftLogix serves diverse industries including manufacturing, FMCG, pharmaceuticals, food & beverage, and retail distribution with tailored solutions.',
+  description: 'SoftLogix serves diverse industries including manufacturing, FMCG, pharmaceuticals, food & beverage, and retail distribution with tax consultancy, trading, and packaging solutions.',
 };
 
 export default function Industries() {
@@ -146,12 +146,13 @@ export default function Industries() {
                   </div>
                 </div>
                 <div className="flex-1 group">
-                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white p-4">
-                    <div className="relative w-full aspect-square">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white p-2 sm:p-4">
+                    <div className="relative w-full aspect-square min-h-[250px] sm:min-h-[300px] lg:min-h-[350px]">
                       <Image
                         src={industry.image}
                         alt={industry.name}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                         className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>

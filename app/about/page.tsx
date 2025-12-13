@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'About Us - SoftLogix',
-  description: 'Learn about SoftLogix, our mission, vision, and commitment to delivering excellence in accounting software consultancy and industrial machinery solutions.',
+  description: 'Learn about SoftLogix, our mission, vision, and commitment to delivering excellence in tax consultancy, general trading, and packaging solutions in Dubai, UAE.',
 };
 
 export default function About() {

@@ -52,12 +52,13 @@ export default function Home() {
             <div className="group rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
-                <div className="mb-6 overflow-hidden rounded-lg bg-white p-4">
-                  <div className="relative w-full aspect-square">
+                <div className="mb-6 overflow-hidden rounded-lg bg-white p-2 sm:p-4">
+                  <div className="relative w-full aspect-square min-h-[200px] sm:min-h-[250px]">
                     <Image
                       src="/images/tax.jpg"
                       alt="Tax Consultancy"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -100,12 +101,13 @@ export default function Home() {
             <div className="group rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
-                <div className="mb-6 overflow-hidden rounded-lg bg-white p-4">
-                  <div className="relative w-full aspect-square">
+                <div className="mb-6 overflow-hidden rounded-lg bg-white p-2 sm:p-4">
+                  <div className="relative w-full aspect-square min-h-[200px] sm:min-h-[250px]">
                     <Image
                       src="/images/packaginghomepage.png"
                       alt="Packaging Materials - Beverages and Products"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
