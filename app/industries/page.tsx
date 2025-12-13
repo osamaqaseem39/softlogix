@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Industries We Serve - SoftLogix',
@@ -10,6 +11,7 @@ export default function Industries() {
     {
       name: 'Manufacturing',
       description: 'Complete solutions for manufacturing operations, from financial management to production line automation.',
+      image: '/images/manufacturer.png',
       solutions: [
         'ERP integration for manufacturing processes',
         'Production line automation equipment',
@@ -26,6 +28,7 @@ export default function Industries() {
     {
       name: 'FMCG (Fast-Moving Consumer Goods)',
       description: 'High-speed packaging and filling solutions with integrated financial systems for fast-moving consumer goods companies.',
+      image: '/images/fmcg.png',
       solutions: [
         'High-speed liquid filling machines',
         'Packaging line automation',
@@ -42,6 +45,7 @@ export default function Industries() {
     {
       name: 'Pharmaceuticals',
       description: 'Precision equipment and compliance-focused software solutions for pharmaceutical manufacturing and distribution.',
+      image: '/images/pharma.png',
       solutions: [
         'Precision filling machines for sterile products',
         'GMP-compliant automation systems',
@@ -58,6 +62,7 @@ export default function Industries() {
     {
       name: 'Food & Beverage',
       description: 'Hygienic filling equipment and integrated financial management for food and beverage production operations.',
+      image: '/images/foodandbeverage.png',
       solutions: [
         'Food-grade liquid filling machines',
         'Bottling and canning equipment',
@@ -74,6 +79,7 @@ export default function Industries() {
     {
       name: 'Retail and Distribution',
       description: 'Efficient distribution solutions with comprehensive accounting systems for retail operations and logistics.',
+      image: '/images/retail.png',
       solutions: [
         'Warehouse management software integration',
         'Multi-location financial consolidation',
@@ -139,9 +145,16 @@ export default function Industries() {
                     </ul>
                   </div>
                 </div>
-                <div className="flex-1 bg-gray-50 rounded-lg p-8 h-full">
-                  <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
-                    <p className="text-gray-400">{industry.name} Industry Image</p>
+                <div className="flex-1 group">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-white p-4">
+                    <div className="relative w-full aspect-square">
+                      <Image
+                        src={industry.image}
+                        alt={industry.name}
+                        fill
+                        className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

@@ -116,7 +116,7 @@ export default function Products() {
 
           <div className="space-y-16">
             {products.map((product, index) => (
-              <div key={index} className="flex flex-col lg:flex-row gap-8 items-start">
+              <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-start`}>
                 <div className="flex-1">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-lg text-blue-900 mb-4">
                     {product.icon}
