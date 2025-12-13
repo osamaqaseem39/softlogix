@@ -59,42 +59,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Industry Experience */}
-      <section className="py-16 lg:py-24 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Industry Experience</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              With years of experience across diverse industries, we understand the unique challenges 
-              and opportunities your business faces.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-4xl font-bold text-blue-900 mb-2">10+</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Years in Business</h3>
-              <p className="text-gray-600">
-                Serving clients across multiple industries with proven track record
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-4xl font-bold text-blue-900 mb-2">500+</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Projects Completed</h3>
-              <p className="text-gray-600">
-                Successfully implemented solutions for businesses of all sizes
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-4xl font-bold text-blue-900 mb-2">98%</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Client Satisfaction</h3>
-              <p className="text-gray-600">
-                Committed to exceeding expectations in every engagement
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Commitment to Quality */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
