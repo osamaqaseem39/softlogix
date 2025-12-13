@@ -79,23 +79,23 @@ export default function WhyChooseUs() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">Why Choose SoftLogix?</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Why Choose SoftLogix?</h1>
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl">
             Experience, expertise, and commitment to your success
           </p>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-white border-b">
+      <section className="py-8 sm:py-12 bg-white border-b">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-4">
             {stats.map((stat, idx) => (
               <div key={idx} className="text-center">
-                <div className="text-4xl font-bold text-blue-900 mb-2">{stat.number}</div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-1 sm:mb-2">{stat.number}</div>
+                <div className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -103,10 +103,10 @@ export default function WhyChooseUs() {
       </section>
 
       {/* Reasons Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">What Sets Us Apart</h2>
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">What Sets Us Apart</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Four key reasons why businesses trust SoftLogix for their technology and automation needs
             </p>

@@ -91,21 +91,21 @@ export default function Products() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">Industrial Machinery Solutions</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
-            Advanced liquid filling machines and automation equipment for modern manufacturing
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Packaging Materials & Products</h1>
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl">
+            Packaging materials, aseptic packaging paper, and juices in PET bottles
           </p>
         </div>
       </section>
 
       {/* Products Overview */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Products & Solutions</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Products & Solutions</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
               Cutting-edge industrial machinery designed for precision, efficiency, and reliability
             </p>
           </div>

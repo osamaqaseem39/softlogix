@@ -9,34 +9,23 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Contact Us</h1>
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl">
             Let's discuss how we can help transform your business operations
           </p>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 lg:py-24 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-24 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-3">
             {/* Contact Information */}
             <div className="lg:col-span-1">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Get in Touch</h2>
               <div className="space-y-6">
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2 flex items-center">
-                    <svg className="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Email
-                  </h3>
-                  <p className="text-gray-600">info@softlogix.com</p>
-                  <p className="text-gray-600">sales@softlogix.com</p>
-                </div>
-
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2 flex items-center">
                     <svg className="w-5 h-5 text-blue-900 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,8 +33,7 @@ export default function Contact() {
                     </svg>
                     Phone
                   </h3>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
-                  <p className="text-gray-600">+1 (555) 123-4568</p>
+                  <p className="text-gray-600">+971 50 763 9211</p>
                 </div>
 
                 <div>
@@ -57,10 +45,9 @@ export default function Contact() {
                     Address
                   </h3>
                   <p className="text-gray-600">
-                    123 Business Park Drive<br />
-                    Suite 400<br />
-                    Industrial City, IC 12345<br />
-                    United States
+                    DSO-IFZA<br />
+                    Dubai Silicon Oasis<br />
+                    Dubai, United Arab Emirates
                   </p>
                 </div>
 

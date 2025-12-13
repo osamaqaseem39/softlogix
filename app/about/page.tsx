@@ -7,22 +7,22 @@ export default function About() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">About SoftLogix</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">About SoftLogix</h1>
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl">
             Delivering excellence through technical expertise and engineering-driven solutions
           </p>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 mb-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Our Mission</h2>
+              <p className="text-base sm:text-lg text-gray-600 mb-4">
                 To empower businesses with cutting-edge technology solutions and industrial automation 
                 that drive efficiency, accuracy, and sustainable growth. We combine deep technical 
                 expertise with practical business understanding to deliver results that matter.

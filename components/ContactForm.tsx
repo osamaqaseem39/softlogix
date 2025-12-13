@@ -33,10 +33,10 @@ export default function ContactForm({ title = "Get in Touch", subtitle = "Fill o
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg">
       <div className="mb-6">
-        <h2 className="text-3xl font-bold text-gray-900 mb-2">{title}</h2>
-        <p className="text-gray-600">{subtitle}</p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{title}</h2>
+        <p className="text-sm sm:text-base text-gray-600">{subtitle}</p>
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

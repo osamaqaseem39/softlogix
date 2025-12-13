@@ -76,21 +76,21 @@ export default function Services() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-blue-900 to-blue-800 text-white py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold mb-4">Accounting Software Consultancy</h1>
-          <p className="text-xl text-blue-100 max-w-3xl">
-            Transform your financial operations with expert software solutions and professional support
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Tax Consultancy</h1>
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl">
+            Transform your financial operations with expert tax consultancy and professional support
           </p>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Services</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
               Comprehensive accounting software solutions from implementation to ongoing support
             </p>
           </div>

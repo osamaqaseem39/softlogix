@@ -11,7 +11,7 @@ export default function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-blue-900">SoftLogix</span>
+            <span className="text-xl sm:text-2xl font-bold text-blue-900">SoftLogix</span>
           </Link>
 
           {/* Desktop Navigation */}
