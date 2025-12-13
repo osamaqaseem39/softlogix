@@ -15,7 +15,7 @@ export default function CataloguePage() {
         const opt = {
           margin: 0.5,
           filename: 'SoftLogix-Catalogue.pdf',
-          image: { type: 'jpeg', quality: 0.98 },
+          image: { type: 'jpeg' as const, quality: 0.98 },
           html2canvas: { 
             scale: 2, 
             useCORS: true,
@@ -23,7 +23,7 @@ export default function CataloguePage() {
             windowWidth: contentRef.current.scrollWidth,
             windowHeight: contentRef.current.scrollHeight
           },
-          jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' },
+          jsPDF: { unit: 'in' as const, format: 'a4' as const, orientation: 'landscape' as const },
           pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
         };
         
