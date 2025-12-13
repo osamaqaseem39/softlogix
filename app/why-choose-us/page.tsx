@@ -78,13 +78,6 @@ export default function WhyChooseUs() {
     }
   ];
 
-  const stats = [
-    { number: '10+', label: 'Years Experience' },
-    { number: '500+', label: 'Projects Completed' },
-    { number: '98%', label: 'Client Satisfaction' },
-    { number: '24/7', label: 'Support Available' }
-  ];
-
   return (
     <div>
       {/* Hero Section */}
@@ -94,20 +87,6 @@ export default function WhyChooseUs() {
           <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl">
             Experience, expertise, and commitment to your success
           </p>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-8 sm:py-12 bg-white border-b">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 gap-4 sm:gap-8 md:grid-cols-4">
-            {stats.map((stat, idx) => (
-              <div key={idx} className="text-center">
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-1 sm:mb-2">{stat.number}</div>
-                <div className="text-xs sm:text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

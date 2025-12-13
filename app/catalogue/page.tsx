@@ -1,10 +1,43 @@
 'use client';
 
 import Image from 'next/image';
+import { useRef } from 'react';
 
 export default function CataloguePage() {
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const handleDownload = async () => {
+    if (contentRef.current) {
+      try {
+        // Dynamically import html2pdf.js
+        const html2pdf = (await import('html2pdf.js')).default;
+        
+        const opt = {
+          margin: 0.5,
+          filename: 'SoftLogix-Catalogue.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { 
+            scale: 2, 
+            useCORS: true,
+            logging: false,
+            windowWidth: contentRef.current.scrollWidth,
+            windowHeight: contentRef.current.scrollHeight
+          },
+          jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' },
+          pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        };
+        
+        await html2pdf().set(opt).from(contentRef.current).save();
+      } catch (error) {
+        console.error('Error generating PDF:', error);
+        // Fallback to print dialog
+        window.print();
+      }
+    }
+  };
+
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen" ref={contentRef}>
       {/* Print-specific styles */}
       <style dangerouslySetInnerHTML={{__html: `
         @media print {
@@ -98,10 +131,10 @@ export default function CataloguePage() {
       <div className="no-print bg-gray-100 py-4 px-6 border-b">
         <div className="max-w-7xl mx-auto flex justify-end">
           <button
-            onClick={() => window.print()}
+            onClick={handleDownload}
             className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition-colors font-medium shadow-md"
           >
-            Print / Save as PDF
+            Download Catalogue
           </button>
         </div>
       </div>
