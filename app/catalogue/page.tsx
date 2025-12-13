@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function CataloguePage() {
   return (
-    <>
+    <div className="bg-white min-h-screen">
       {/* Print-specific styles */}
       <style dangerouslySetInnerHTML={{__html: `
         @media print {
@@ -29,7 +29,6 @@ export default function CataloguePage() {
           }
         }
       `}} />
-      <div className="bg-white min-h-screen">
 
       {/* Print Button - Hidden when printing */}
       <div className="no-print bg-gray-100 py-4 px-6 border-b">
@@ -365,6 +364,6 @@ export default function CataloguePage() {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }
