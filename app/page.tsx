@@ -5,17 +5,17 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-12 sm:py-16 md:py-20 lg:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white py-20 sm:py-28 md:py-36 lg:py-48 overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/herobg.jpg"
             alt="Background"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-50"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/80 to-blue-900/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 via-blue-800/50 to-blue-900/50"></div>
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -52,14 +52,15 @@ export default function Home() {
             <div className="group rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
-                <div className="mb-6 overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/tax.jpg"
-                    alt="Tax Consultancy"
-                    width={600}
-                    height={400}
-                    className="w-full h-48 object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
-                  />
+                <div className="mb-6 overflow-hidden rounded-lg bg-white p-4">
+                  <div className="relative w-full aspect-square">
+                    <Image
+                      src="/images/tax.jpg"
+                      alt="Tax Consultancy"
+                      fill
+                      className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
                 Tax Consultancy & General Trading
@@ -99,14 +100,15 @@ export default function Home() {
             <div className="group rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden relative">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative z-10">
-                <div className="mb-6 overflow-hidden rounded-lg">
-                  <Image
-                    src="/images/packaging.png"
-                    alt="Packaging Materials"
-                    width={600}
-                    height={400}
-                    className="w-full h-48 object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
-                  />
+                <div className="mb-6 overflow-hidden rounded-lg bg-white p-4">
+                  <div className="relative w-full aspect-square">
+                    <Image
+                      src="/images/packaginghomepage.png"
+                      alt="Packaging Materials - Beverages and Products"
+                      fill
+                      className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                 </div>
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
                 Packaging Materials & Products

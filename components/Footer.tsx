@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,7 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-4">
           {/* Company Info */}
           <div className="col-span-1 sm:col-span-2 md:col-span-2">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">SoftLogix</h3>
+            <Link href="/" className="inline-block mb-3 sm:mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="SoftLogix Logo"
+                width={150}
+                height={40}
+                className="h-8 sm:h-10 w-auto brightness-0 invert"
+              />
+            </Link>
             <p className="mb-4 text-sm sm:text-base text-gray-400">
               Tax Consultancy, General Trading, and Marketing Management. 
               Specializing in Packaging Materials, Aseptic Packaging Paper, and Juices in PET Bottles.

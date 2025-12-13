@@ -120,15 +120,15 @@ export default function Services() {
                   </ul>
                 </div>
                 <div className="flex-1 group">
-                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <Image
-                      src={index === 0 ? "/images/tax.jpg" : index === 1 ? "/images/consultation.jpg" : "/images/consulation.jpg"}
-                      alt={service.title}
-                      width={600}
-                      height={400}
-                      className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white p-4">
+                    <div className="relative w-full aspect-square">
+                      <Image
+                        src={index === 0 ? "/images/tax.jpg" : index === 1 ? "/images/consultation.jpg" : "/images/consulation.jpg"}
+                        alt={service.title}
+                        fill
+                        className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
