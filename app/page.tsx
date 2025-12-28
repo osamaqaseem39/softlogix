@@ -47,6 +47,9 @@ export default function Home() {
       {/* Value Propositions */}
       <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Our Services</h2>
+          </div>
           <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2">
             {/* Tax Consultancy & General Trading */}
             <div className="group rounded-lg bg-gray-50 p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden relative">
