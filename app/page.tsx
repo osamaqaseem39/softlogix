@@ -62,7 +62,7 @@ export default function Home() {
                       alt="Tax Consultancy"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function Home() {
                       alt="Packaging Materials - Beverages and Products"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-contain rounded-lg group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
